@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Game</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./css/pago.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="shop-container">
+  <form id="index-form" class="formulario" action="">
+  <ul class="navbar">
+    <li>
+      <button id="subscribe" class="btnBar">
+        suscribe
+      </button>
+    </li>
+    <li>
+      <button id="logout" class="btnBar">
+        <span class="glyphicon glyphicon-log-out"></span> log out
+      </button>
+    </li>
+  </ul>
+          <!-- The Modal -->
+         <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Metodo de Pago</h1>
+          <p>Seleccione el metodo de pago</p>
+          <div class="flip-box-container" style="display:flex">
+           <div class="flip-box">
+            <div class="flip-box-inner01">
+              <div class="flip-box-front01">
+                <br>
+                <br>
+                <br>
+                <h2>Yappy</h2>
+              </div>
+              <div class="flip-box-back01">
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="yappy-button">
+                  <a id="yappy-anchor" href="">
+                    <span>Pagar con</span>
+                    <span>yappy</span>
+                  </a>
+                </div> 
+              </div>
+            </div>
+           </div>
+           <div class="flip-box">
+            <div class="flip-box-inner02">
+              <div class="flip-box-front02">
+                <br>
+                <br>
+                <br>
+                <h2>Otro</h2>
+              </div>
+              <div class="flip-box-back02">
+                <br>
+                <br>
+                <br>
+                <h2>Proximamente...</h2>
+              </div>
+            </div>
+           </div> 
+        </div>
+          <h2></h2>       
+         </div>
+        </div>
+  <div class="container"></div>
+  </form> 
+  </div>
+  <script src="js/utils.js"></script>
+  <script src="js/home.js"></script>
+  <script type="module" src="./index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    // Get the modal
+    var modalAux = document.getElementById("myModal");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modalAux.style.display = "none";
+      location.reload();
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modalAux) {
+        modalAux.style.display = "none";
+        location.reload();
+      }
+    }
+  </script>
+</body>
+</html>

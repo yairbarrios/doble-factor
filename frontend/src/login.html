@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Login</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <form id="login-form" class="formulario">
+        <div class="login-form">
+            <h1 class="header">Login</h1>
+            
+            <input id="user-query" type="text" placeholder="Username" autocomplete="off" class="email" required>
+            <input id="pass-query" type="password" placeholder="Password" autocomplete="off" class="password" required>
+            <input id="token-query" type="token" placeholder="Token" autocomplete="off" style="display:none" required>
+
+            <button id="btnLogin" class="submit-btn">Log In</button>
+            <button id="btnToken" class="submit-btn" style="display:none">Validar</button>
+            <a href="register.html" class="link">New? Sign up - and start playing chess!</a>
+        </div>
+    </form>
+
+    <script src="js/utils.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+</html>

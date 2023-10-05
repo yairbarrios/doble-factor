@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Register</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <form id="login-form" class="formulario">
+        <div class="register-form">
+            <h1 class="header">register</h1>
+            
+            <input id="user-query" type="text" placeholder="Username" autocomplete="off" class="email" required>
+            <input id="pass-query" type="password" placeholder="Password" autocomplete="off" class="password" required>
+            <input id="name-query" type="text" placeholder="Name" autocomplete="off" class="email" required>
+            <input id="email-query" type="text" placeholder="Name" autocomplete="off" class="email" required>
+            <select name="score-query" id="score-query">
+              <option value="new">New to Chess</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select> 
+            <label for="score-query">What is your chess skill level?</label>
+
+            <button id="btnSignUp" class="submit-btn">Sign Up</button>
+            <a href="login.html" class="link">Already have an account? Log In</a>
+        </div>
+    </form>
+
+    <script src="js/utils.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+</html>
