@@ -1,9 +1,9 @@
 (() => {
     const Utils = {
         settings: {
-            backendBaseUrl: "http://localhost:3001",
+            backendBaseUrl: "http://localhost:3005",
             frontendBaseUrl: "http://localhost:3000",
-            backendBaseUrlToken: "http://localhost:3001",
+            backendBaseUrlToken: "http://localhost:3005",
         },
         getFormattedBackendUrl: ({ service }) => {
             return `${Utils.settings.backendBaseUrl}/${service}`;
